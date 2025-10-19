@@ -1,0 +1,402 @@
+[
+  {
+    "id": "saudade",
+    "lang": "pt",
+    "term": "Saudade",
+    "gloss": "会えない相手や過ぎた時間を想い続ける、甘い哀愁を帯びた愛情。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.7,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.9,
+      "pragmatic": 0.2
+    },
+    "tags": ["哀愁", "遠距離", "記憶"],
+    "culture_note": "ポルトガル語圏の郷愁感情。ファド音楽とも親和。"
+  },
+  {
+    "id": "amour_fou",
+    "lang": "fr",
+    "term": "Amour fou",
+    "gloss": "理性を超えた、狂おしいまでの愛。",
+    "axes": {
+      "passion": 0.95,
+      "serenity": 0.1,
+      "dependence": 0.6,
+      "autonomy": 0.4,
+      "expressive": 0.9,
+      "restrained": 0.1,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.8,
+      "pragmatic": 0.2
+    },
+    "tags": ["情熱", "衝動", "献身"],
+    "culture_note": "シュルレアリスム文学でも語られる概念。"
+  },
+  {
+    "id": "jeong",
+    "lang": "ko",
+    "term": "정 (Jeong)",
+    "gloss": "暮らしを共にする中で静かに育つ、穏やかな情・情愛。",
+    "axes": {
+      "passion": 0.3,
+      "serenity": 0.9,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.6,
+      "pragmatic": 0.6
+    },
+    "tags": ["情", "育つ愛", "生活感"],
+    "culture_note": "家族や共同体への帰属意識と結びつく。"
+  },
+  {
+    "id": "kilig",
+    "lang": "tl",
+    "term": "Kilig",
+    "gloss": "恋の“きゅん”とする高揚・ときめき。",
+    "axes": {
+      "passion": 0.7,
+      "serenity": 0.3,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.8,
+      "restrained": 0.2,
+      "enduring": 0.3,
+      "fleeting": 0.7,
+      "poetic": 0.7,
+      "pragmatic": 0.3
+    },
+    "tags": ["初恋", "高揚", "胸きゅん"],
+    "culture_note": "フィリピン大衆文化で頻出の恋語。"
+  },
+  {
+    "id": "sisu",
+    "lang": "fi",
+    "term": "Sisu",
+    "gloss": "困難に耐え抜き支え続ける、胆力ある愛の姿勢。",
+    "axes": {
+      "passion": 0.4,
+      "serenity": 0.8,
+      "dependence": 0.2,
+      "autonomy": 0.8,
+      "expressive": 0.3,
+      "restrained": 0.7,
+      "enduring": 0.95,
+      "fleeting": 0.05,
+      "poetic": 0.4,
+      "pragmatic": 0.8
+    },
+    "tags": ["忍耐", "長期", "誠実"],
+    "culture_note": "厳しい自然環境に根ざす国民的美徳。"
+  },
+  {
+    "id": "mono_no_aware",
+    "lang": "ja",
+    "term": "もののあはれ",
+    "gloss": "移ろいの中に感じる切なさと美。はかない愛の情緒。",
+    "axes": {
+      "passion": 0.4,
+      "serenity": 0.8,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.95,
+      "pragmatic": 0.2
+    },
+    "tags": ["無常", "余白", "詩情"],
+    "culture_note": "和歌・古典に通底する美意識。"
+  },
+  {
+    "id": "meraki",
+    "lang": "el",
+    "term": "Meraki",
+    "gloss": "魂を込めて世話や創作、愛を注ぐ姿勢。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.6,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.7,
+      "restrained": 0.3,
+      "enduring": 0.7,
+      "fleeting": 0.3,
+      "poetic": 0.6,
+      "pragmatic": 0.6
+    },
+    "tags": ["ケア", "献身", "手しごと"],
+    "culture_note": "ギリシャの生活美学に根ざす。"
+  },
+  {
+    "id": "hiraeth",
+    "lang": "cy",
+    "term": "Hiraeth",
+    "gloss": "もう戻れない場所や人への郷愁・恋慕の切望。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.7,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["喪失", "記憶", "帰郷"],
+    "culture_note": "ウェールズ文化を象徴する情感。"
+  },
+  {
+    "id": "ubuntu",
+    "lang": "zu",
+    "term": "Ubuntu",
+    "gloss": "私は私たちであるから私である——関係性としての愛。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.8,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.8,
+      "fleeting": 0.2,
+      "poetic": 0.7,
+      "pragmatic": 0.7
+    },
+    "tags": ["共同体", "ケア", "共感"],
+    "culture_note": "南部アフリカの倫理観。"
+  },
+  {
+    "id": "tarab",
+    "lang": "ar",
+    "term": "طرب (Tarab)",
+    "gloss": "音楽的恍惚。官能と陶酔に近い愛の高まり。",
+    "axes": {
+      "passion": 0.85,
+      "serenity": 0.2,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.9,
+      "restrained": 0.1,
+      "enduring": 0.5,
+      "fleeting": 0.5,
+      "poetic": 0.8,
+      "pragmatic": 0.3
+    },
+    "tags": ["陶酔", "音楽", "官能"],
+    "culture_note": "クラシカル音楽語彙と結びつく。"
+  },
+  {
+    "id": "agape",
+    "lang": "el",
+    "term": "Agápē",
+    "gloss": "見返りを求めない無私の愛。慈愛。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.8,
+      "dependence": 0.2,
+      "autonomy": 0.8,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.95,
+      "fleeting": 0.05,
+      "poetic": 0.6,
+      "pragmatic": 0.7
+    },
+    "tags": ["無私", "慈しみ", "普遍"],
+    "culture_note": "ギリシャ語の愛の区分の一つ。"
+  },
+  {
+    "id": "eros",
+    "lang": "el",
+    "term": "Éros",
+    "gloss": "魅了と欲望、創造的衝動としての愛。",
+    "axes": {
+      "passion": 0.9,
+      "serenity": 0.2,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.9,
+      "restrained": 0.1,
+      "enduring": 0.5,
+      "fleeting": 0.5,
+      "poetic": 0.7,
+      "pragmatic": 0.3
+    },
+    "tags": ["官能", "創造性", "引力"],
+    "culture_note": "古代ギリシャの愛の類型の一つ。"
+  },
+  {
+    "id": "en",
+    "lang": "ja",
+    "term": "縁",
+    "gloss": "人と人を結ぶ見えないつながり。巡り合わせ。",
+    "axes": {
+      "passion": 0.4,
+      "serenity": 0.8,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.85,
+      "fleeting": 0.15,
+      "poetic": 0.8,
+      "pragmatic": 0.5
+    },
+    "tags": ["つながり", "偶然", "運命"],
+    "culture_note": "日本的世界観の人間関係観。"
+  },
+  {
+    "id": "yugen",
+    "lang": "ja",
+    "term": "幽玄",
+    "gloss": "直接言語化できない深い余情・奥行きを感じる美。",
+    "axes": {
+      "passion": 0.3,
+      "serenity": 0.9,
+      "dependence": 0.2,
+      "autonomy": 0.8,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.7,
+      "fleeting": 0.3,
+      "poetic": 0.95,
+      "pragmatic": 0.2
+    },
+    "tags": ["余白", "暗示", "深み"],
+    "culture_note": "恋の表現にも影響を与える美学。"
+  },
+  {
+    "id": "mamihlapinatapai",
+    "lang": "yag",
+    "term": "Mamihlapinatapai",
+    "gloss": "互いに望み合いながら、誰も先に動けずに交わす沈黙のまなざし。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.6,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.2,
+      "restrained": 0.8,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["駆け引き", "沈黙", "期待"],
+    "culture_note": "ヤガン語の名高い“翻訳困難語”。"
+  },
+  {
+    "id": "sehnsucht",
+    "lang": "de",
+    "term": "Sehnsucht",
+    "gloss": "届かぬものへの強い憧憬と切望。",
+    "axes": {
+      "passion": 0.7,
+      "serenity": 0.4,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.8,
+      "fleeting": 0.2,
+      "poetic": 0.85,
+      "pragmatic": 0.3
+    },
+    "tags": ["渇望", "理想", "距離"],
+    "culture_note": "ドイツロマン主義の中心概念。"
+  },
+  {
+    "id": "forelsket",
+    "lang": "no",
+    "term": "Forelsket",
+    "gloss": "恋に落ち始めた時期の多幸感・浮遊感。",
+    "axes": {
+      "passion": 0.8,
+      "serenity": 0.3,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.8,
+      "restrained": 0.2,
+      "enduring": 0.4,
+      "fleeting": 0.6,
+      "poetic": 0.7,
+      "pragmatic": 0.3
+    },
+    "tags": ["初期", "陶酔", "多幸感"],
+    "culture_note": "北欧の恋の初期感情語。"
+  },
+  {
+    "id": "merak",
+    "lang": "sr",
+    "term": "Merak",
+    "gloss": "小さな歓びをじっくり味わう、心地よい恍惚。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.8,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.7,
+      "pragmatic": 0.5
+    },
+    "tags": ["余韻", "心地よさ", "日常"],
+    "culture_note": "バルカン半島の生活感情語。"
+  },
+  {
+    "id": "naz",
+    "lang": "fa",
+    "term": "ناز (Naz)",
+    "gloss": "愛する人に見せる可愛い“つれなさ”や気取りを含む媚態。",
+    "axes": {
+      "passion": 0.7,
+      "serenity": 0.5,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.8,
+      "restrained": 0.2,
+      "enduring": 0.5,
+      "fleeting": 0.5,
+      "poetic": 0.8,
+      "pragmatic": 0.3
+    },
+    "tags": ["駆け引き", "愛嬌", "誘惑"],
+    "culture_note": "ペルシア詩の恋の身振り。"
+  },
+  {
+    "id": "friolero_amor",
+    "lang": "es",
+    "term": "Amor friolero",
+    "gloss": "冷めやすくも再び温め直せる、気まぐれな愛。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.5,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.4,
+      "fleeting": 0.6,
+      "poetic": 0.6,
+      "pragmatic": 0.4
+    },
+    "tags": ["浮き沈み", "再燃", "温度感"],
+    "culture_note": "口語的な比喩表現としての“冷え性の愛”。"
+  }
+]
