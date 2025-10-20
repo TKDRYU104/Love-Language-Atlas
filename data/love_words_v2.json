@@ -1,0 +1,422 @@
+[
+  {
+    "id": "saudade",
+    "lang": "pt",
+    "term": "Saudade",
+    "gloss": "失われたもの、手の届かないものへの甘美で切ない郷愁。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.7,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.95,
+      "pragmatic": 0.2
+    },
+    "tags": ["郷愁", "記憶", "残響"],
+    "culture_note": "ポルトガル/ガリシア文化の中核感情。",
+    "phase": "余韻"
+  },
+  {
+    "id": "hiraeth",
+    "lang": "cy",
+    "term": "Hiraeth",
+    "gloss": "もう戻れない故郷や過去への喪失と憧れが入り混じる深い情。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.7,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.95,
+      "pragmatic": 0.2
+    },
+    "tags": ["喪失", "帰郷", "記憶"],
+    "culture_note": "ウェールズ文化の象徴的概念。",
+    "phase": "余韻"
+  },
+  {
+    "id": "mamihlapinatapai",
+    "lang": "yag",
+    "term": "Mamihlapinatapai",
+    "gloss": "互いに望みながら誰も先に動けず、沈黙のまなざしを交わす瞬間。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.6,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.2,
+      "restrained": 0.8,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["沈黙", "駆け引き", "期待"],
+    "culture_note": "南米ティエラ・デル・フエゴのヤーガン語。",
+    "phase": "出会い"
+  },
+  {
+    "id": "han",
+    "lang": "ko",
+    "term": "한 (Han)",
+    "gloss": "悲しみと希望が共存する、心の底に沈殿した痛みと粘り強さ。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.5,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.95,
+      "fleeting": 0.05,
+      "poetic": 0.85,
+      "pragmatic": 0.4
+    },
+    "tags": ["痛み", "継承", "希望"],
+    "culture_note": "朝鮮半島の歴史・共同体体験に根ざす。",
+    "phase": "試練"
+  },
+  {
+    "id": "viraha",
+    "lang": "hi",
+    "term": "Viraha",
+    "gloss": "離れているからこそ愛が深くなる、距離が磨く恋慕。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.6,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.8,
+      "fleeting": 0.2,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["遠距離", "想慕", "成熟"],
+    "culture_note": "ヒンディー文学・詩歌で語られる主題。",
+    "phase": "距離"
+  },
+  {
+    "id": "odnoliub",
+    "lang": "ru",
+    "term": "Odnoliub",
+    "gloss": "生涯でたった一人だけを愛する人。",
+    "axes": {
+      "passion": 0.7,
+      "serenity": 0.6,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.98,
+      "fleeting": 0.02,
+      "poetic": 0.8,
+      "pragmatic": 0.4
+    },
+    "tags": ["一途", "永続", "誓い"],
+    "culture_note": "ロシア語圏の“唯一性”概念。",
+    "phase": "誓約"
+  },
+  {
+    "id": "aay_han",
+    "lang": "xx",
+    "term": "Aay’Han",
+    "gloss": "喪失の悲しみと幸福が一瞬に重なる、甘く痛い記憶の点滅。",
+    "axes": {
+      "passion": 0.8,
+      "serenity": 0.4,
+      "dependence": 0.5,
+      "autonomy": 0.5,
+      "expressive": 0.7,
+      "restrained": 0.3,
+      "enduring": 0.7,
+      "fleeting": 0.3,
+      "poetic": 0.9,
+      "pragmatic": 0.2
+    },
+    "tags": ["喪失", "歓喜", "残香"],
+    "culture_note": "フィクション由来だが強い詩的含意。",
+    "phase": "余韻"
+  },
+  {
+    "id": "ser",
+    "lang": "hy",
+    "term": "Ser",
+    "gloss": "深い愛と絆。穏やかさと情熱が同居する成熟の愛。",
+    "axes": {
+      "passion": 0.65,
+      "serenity": 0.75,
+      "dependence": 0.45,
+      "autonomy": 0.55,
+      "expressive": 0.55,
+      "restrained": 0.45,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.7,
+      "pragmatic": 0.6
+    },
+    "tags": ["成熟", "絆", "包容"],
+    "culture_note": "アルメニア語の“愛”。",
+    "phase": "成熟"
+  },
+  {
+    "id": "tabanca",
+    "lang": "ttr",
+    "term": "Tabanca",
+    "gloss": "恋に破れた後もしつこく残る恋しさと未練。",
+    "axes": {
+      "passion": 0.6,
+      "serenity": 0.5,
+      "dependence": 0.55,
+      "autonomy": 0.45,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.8,
+      "fleeting": 0.2,
+      "poetic": 0.85,
+      "pragmatic": 0.3
+    },
+    "tags": ["失恋", "余熱", "郷愁"],
+    "culture_note": "トリニダード・トバゴのクレオール文化。",
+    "phase": "失恋"
+  },
+  {
+    "id": "dor",
+    "lang": "ro",
+    "term": "Dor",
+    "gloss": "遠い人や場所への深い恋しさ。距離が育てる愛着。",
+    "axes": {
+      "passion": 0.55,
+      "serenity": 0.65,
+      "dependence": 0.45,
+      "autonomy": 0.55,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.85,
+      "fleeting": 0.15,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["距離", "郷愁", "想慕"],
+    "culture_note": "ルーマニア文化圏の重要概念。",
+    "phase": "距離"
+  },
+  {
+    "id": "assouf",
+    "lang": "tmh",
+    "term": "Assouf",
+    "gloss": "砂漠の静けさに宿る孤独と美しさ。孤高の愛のまなざし。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.8,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.4,
+      "restrained": 0.6,
+      "enduring": 0.8,
+      "fleeting": 0.2,
+      "poetic": 0.9,
+      "pragmatic": 0.3
+    },
+    "tags": ["孤独", "静寂", "崇高"],
+    "culture_note": "トゥアレグの世界観。",
+    "phase": "内省"
+  },
+  {
+    "id": "geborgenheit",
+    "lang": "de",
+    "term": "Geborgenheit",
+    "gloss": "愛する人の中に“家”のような安心と保護を感じる状態。",
+    "axes": {
+      "passion": 0.45,
+      "serenity": 0.85,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.9,
+      "fleeting": 0.1,
+      "poetic": 0.6,
+      "pragmatic": 0.75
+    },
+    "tags": ["安心", "包容", "帰属"],
+    "culture_note": "ドイツ語の“ぬくもりに包まれた安全”。",
+    "phase": "成熟"
+  },
+  {
+    "id": "naz",
+    "lang": "ur",
+    "term": "Naz",
+    "gloss": "無条件に愛されることで生まれる自信とおだやかな誇り。",
+    "axes": {
+      "passion": 0.55,
+      "serenity": 0.7,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.6,
+      "restrained": 0.4,
+      "enduring": 0.75,
+      "fleeting": 0.25,
+      "poetic": 0.8,
+      "pragmatic": 0.4
+    },
+    "tags": ["受容", "信頼", "安定"],
+    "culture_note": "ウルドゥー詩にみられる恋の身振り。",
+    "phase": "成熟"
+  },
+  {
+    "id": "tarab",
+    "lang": "ar",
+    "term": "طرب (Tarab)",
+    "gloss": "音楽的恍惚。官能と精神が高みで出会う陶酔の愛。",
+    "axes": {
+      "passion": 0.85,
+      "serenity": 0.25,
+      "dependence": 0.45,
+      "autonomy": 0.55,
+      "expressive": 0.9,
+      "restrained": 0.1,
+      "enduring": 0.5,
+      "fleeting": 0.5,
+      "poetic": 0.85,
+      "pragmatic": 0.25
+    },
+    "tags": ["陶酔", "官能", "音楽"],
+    "culture_note": "アラブ古典音楽の核心概念。",
+    "phase": "高揚"
+  },
+  {
+    "id": "frisson",
+    "lang": "fr",
+    "term": "Frisson",
+    "gloss": "芸術や音楽に触れた瞬間の背筋の震え。恋にも似る電光石火。",
+    "axes": {
+      "passion": 0.75,
+      "serenity": 0.25,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.8,
+      "restrained": 0.2,
+      "enduring": 0.4,
+      "fleeting": 0.6,
+      "poetic": 0.85,
+      "pragmatic": 0.2
+    },
+    "tags": ["震え", "芸術", "瞬発"],
+    "culture_note": "仏語の“ゾクッとする感動”。",
+    "phase": "高揚"
+  },
+  {
+    "id": "qene",
+    "lang": "am",
+    "term": "ቅኔ (Qené)",
+    "gloss": "詩的符号で想いを伝える言語文化。示唆と余白の愛。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.7,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.7,
+      "fleeting": 0.3,
+      "poetic": 0.95,
+      "pragmatic": 0.25
+    },
+    "tags": ["詩", "暗示", "象徴"],
+    "culture_note": "エチオピア正教圏の詩学。",
+    "phase": "表現"
+  },
+  {
+    "id": "ubuntu",
+    "lang": "zu",
+    "term": "Ubuntu",
+    "gloss": "“私は私たちであるから私”。関係として立ち上がる愛の倫理。",
+    "axes": {
+      "passion": 0.5,
+      "serenity": 0.8,
+      "dependence": 0.45,
+      "autonomy": 0.55,
+      "expressive": 0.55,
+      "restrained": 0.45,
+      "enduring": 0.85,
+      "fleeting": 0.15,
+      "poetic": 0.7,
+      "pragmatic": 0.75
+    },
+    "tags": ["共同体", "ケア", "共感"],
+    "culture_note": "南部アフリカの哲学的価値。",
+    "phase": "成熟"
+  },
+  {
+    "id": "jeong",
+    "lang": "ko",
+    "term": "정 (Jeong)",
+    "gloss": "暮らしの反復で静かに厚みを増す情。関係の稜線。",
+    "axes": {
+      "passion": 0.35,
+      "serenity": 0.9,
+      "dependence": 0.4,
+      "autonomy": 0.6,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.95,
+      "fleeting": 0.05,
+      "poetic": 0.7,
+      "pragmatic": 0.65
+    },
+    "tags": ["情", "生活", "継続"],
+    "culture_note": "家族・共同体で育つ絆。",
+    "phase": "成熟"
+  },
+  {
+    "id": "mono_no_aware",
+    "lang": "ja",
+    "term": "もののあはれ",
+    "gloss": "移ろいの中ににじむ切なさと美。はかない愛の情緒。",
+    "axes": {
+      "passion": 0.45,
+      "serenity": 0.8,
+      "dependence": 0.35,
+      "autonomy": 0.65,
+      "expressive": 0.5,
+      "restrained": 0.5,
+      "enduring": 0.6,
+      "fleeting": 0.4,
+      "poetic": 0.98,
+      "pragmatic": 0.2
+    },
+    "tags": ["無常", "余白", "詩情"],
+    "culture_note": "日本古典美学。",
+    "phase": "余韻"
+  },
+  {
+    "id": "yugen",
+    "lang": "ja",
+    "term": "幽玄",
+    "gloss": "言葉に尽くせぬ奥行きと余情。恋をも沈黙で包む美学。",
+    "axes": {
+      "passion": 0.3,
+      "serenity": 0.9,
+      "dependence": 0.3,
+      "autonomy": 0.7,
+      "expressive": 0.35,
+      "restrained": 0.65,
+      "enduring": 0.7,
+      "fleeting": 0.3,
+      "poetic": 0.98,
+      "pragmatic": 0.2
+    },
+    "tags": ["余情", "陰影", "沈黙"],
+    "culture_note": "中世日本の審美概念。",
+    "phase": "表現"
+  }
+]

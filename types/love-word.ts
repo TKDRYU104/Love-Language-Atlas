@@ -8,4 +8,5 @@ export interface LoveWord {
   axes: Record<LoveAxis, number>;
   tags?: string[];
   culture_note?: string;
+  phase?: string;
 }
