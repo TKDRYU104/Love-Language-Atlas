@@ -28,6 +28,12 @@ interface DiagnoseResponse {
   analysis: {
     summary_ja: string;
     scores: Record<string, number>;
+    excerpts?: string[];
+    reflection?: {
+      excerpts: string[];
+      interpretation: string;
+      tone_hint?: string;
+    };
   };
   result: {
     pick?: DiagnosePick;
@@ -402,6 +408,10 @@ export default function Home() {
     return [];
   }, [result]);
   const primaryPick = picks[0];
+  const analysis = result?.analysis;
+  const reflection = analysis?.reflection;
+  const reflectionExcerpts =
+    (reflection?.excerpts?.length ? reflection.excerpts : analysis?.excerpts) ?? [];
   const answerSummaries = useMemo(() => {
     return QUESTIONS.map((item, index) => {
       const raw = answers[index] ?? "";
@@ -1008,6 +1018,22 @@ export default function Home() {
                   他にもあなたに響く言葉をあわせてお届けします。
                 </p>
               </header>
+
+              {reflection && (
+                <section className="mt-4 rounded-xl border border-pink-100 bg-white/70 p-4 text-left shadow-sm">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900">あなたへの読み取り</h3>
+                  {reflectionExcerpts.length > 0 && (
+                    <ul className="mb-3 list-disc space-y-1 pl-5 text-sm text-gray-600">
+                      {reflectionExcerpts.slice(0, 2).map((excerpt, index) => (
+                        <li key={index}>「{excerpt}」</li>
+                      ))}
+                    </ul>
+                  )}
+                  <p className="text-base leading-relaxed text-gray-800">
+                    {reflection.interpretation}
+                  </p>
+                </section>
+              )}
 
               <div className="flex flex-col gap-5">
                 {picks.map((pick, index) => (

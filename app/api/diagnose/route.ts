@@ -7,6 +7,7 @@ import { buildAnalyzerPrompt, buildMatcherPrompt } from "@/lib/prompts";
 import { qaToEmbeddingText, type QAItem } from "@/lib/qa";
 import { cosineSim } from "@/lib/vectors";
 import type { LoveWord } from "@/types/love-word";
+import { extractExcerpts } from "@/lib/excerpt";
 
 const answerSchema = z
   .object({
@@ -176,8 +177,63 @@ export async function POST(request: NextRequest) {
       return pick;
     });
 
+    const excerpts = extractExcerpts(answers, 2);
+
+    const reflectorSystem = `あなたは編集者兼セラピストです。以下の[EXCERPTS]に含まれる引用のみを根拠に、
+二人称（「あなた」）で相手を尊重しながら、納得感のある短い解釈文を日本語で作成してください。
+断定は避け、優しく具体的に。全体は180〜240字。出力はJSONのみ。
+形式:
+{
+  "excerpts": ["…引用1…","…引用2…"],
+  "interpretation": "あなたは…という傾向があるように感じます。…",
+  "tone_hint": "やわらか/肯定/落ち着き"
+}
+※引用は必ず [EXCERPTS] にある文のみを用い、最大2件まで。新規の引用作成は禁止。`;
+
+    const reflectorUser = `[EXCERPTS]
+${excerpts.map((e) => `- ${e}`).join("\n")}
+
+[要約]
+${summary_ja}
+
+[軸スコア]
+${JSON.stringify(normalizedScores)}`;
+
+    let reflection: { excerpts: string[]; interpretation: string; tone_hint: string } = {
+      excerpts,
+      interpretation: "",
+      tone_hint: "やわらか"
+    };
+
+    try {
+      const reflectionRaw = await chat([
+        { role: "system", content: reflectorSystem },
+        { role: "user", content: reflectorUser }
+      ]);
+      const parsed = JSON.parse(reflectionRaw);
+      if (parsed?.interpretation) {
+        reflection = {
+          excerpts: Array.isArray(parsed.excerpts) ? parsed.excerpts : excerpts,
+          interpretation: parsed.interpretation,
+          tone_hint: typeof parsed.tone_hint === "string" ? parsed.tone_hint : "やわらか"
+        };
+      } else {
+        reflection.interpretation =
+          "あなたは、自分の感情をていねいに見つめながら、相手との静かな信頼を大切にする人のように感じます。";
+      }
+    } catch (error) {
+      console.warn("[diagnose] reflection generation failed", error);
+      reflection.interpretation =
+        "あなたは、自分の感情をていねいに見つめながら、相手との静かな信頼を大切にする人のように感じます。";
+    }
+
+    if (!reflection.interpretation) {
+      reflection.interpretation =
+        "あなたは、自分の感情をていねいに見つめながら、相手との静かな信頼を大切にする人のように感じます。";
+    }
+
     return NextResponse.json({
-      analysis: { summary_ja, scores: normalizedScores },
+      analysis: { summary_ja, scores: normalizedScores, excerpts, reflection },
       result: { picks }
     });
   } catch (error) {
