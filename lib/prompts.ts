@@ -9,7 +9,7 @@ export type ChatMessage = {
 
 interface AnalyzerInput {
   qa: QAItem[];
-  axes: LoveAxis[];
+  axes: readonly LoveAxis[];
 }
 
 interface MatcherInput {

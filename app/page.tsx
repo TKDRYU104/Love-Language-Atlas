@@ -48,8 +48,8 @@ const API_ERROR_MESSAGES: Record<string, string> = {
   internal_error: "診断処理で予期しないエラーが発生しました。時間を置いて再試行してください。"
 };
 
-const YES = "はい";
-const NO = "いいえ";
+const YES = "はい" as const;
+const NO = "いいえ" as const;
 
 type YesNoOpenValue = {
   choice: typeof YES | typeof NO | "";
@@ -360,7 +360,7 @@ export default function Home() {
   const isRecording = recorderState === "recording";
   const currentAnswer = answers[currentIndex] ?? "";
   const isLastQuestion = currentIndex === QUESTIONS.length - 1;
-  const yesNoOpenValue =
+  const yesNoOpenValue: YesNoOpenValue =
     question?.type === "yesno+open" ? decodeYesNoOpen(currentAnswer) : { choice: "", note: "" };
   const selectedChoice = question?.type === "choice" ? currentAnswer : "";
   const trimmedOpenAnswer = question?.type === "open" ? currentAnswer.trim() : "";
