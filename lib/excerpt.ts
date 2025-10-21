@@ -88,7 +88,7 @@ function hasAny(s: string, dict: string[]) {
 function jaccard(a: string, b: string) {
   const sa = new Set(a.split(""));
   const sb = new Set(b.split(""));
-  const inter = [...sa].filter((ch) => sb.has(ch)).length;
+  const inter = Array.from(sa).filter((ch) => sb.has(ch)).length;
   const union = sa.size + sb.size - inter;
   return union === 0 ? 0 : inter / union;
 }
