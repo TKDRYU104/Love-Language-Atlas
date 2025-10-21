@@ -30,17 +30,27 @@ export type Question =
     };
 
 export const QUESTIONS: Question[] = [
-  { id: 1, text: "最近、“心が動いた”瞬間ってどんなとき？", type: "open", weight: 1 },
+  {
+    id: 1,
+    text: "最近、恋愛で“心が動いた”瞬間ってどんなとき？",
+    type: "open",
+    weight: 1,
+  },
   {
     id: 2,
     text: "誰かを好きになったら、まずどうしちゃうタイプ？",
     type: "open",
     weight: 1.2,
   },
-  { id: 3, text: "一緒にいる時間って、どんな空気が理想？", type: "open", weight: 1 },
+  {
+    id: 3,
+    text: "一緒にいる時間って、どんな空気が理想？",
+    type: "open",
+    weight: 1,
+  },
   {
     id: 4,
-    text: "恋人からの連絡が少ないとき、どんな気持ちになる？",
+    text: "恋人からの連絡が少ないとき、寂しくなりますか？",
     type: "yesno+open",
     followup: true,
     weight: 1.3,
@@ -57,8 +67,18 @@ export const QUESTIONS: Question[] = [
     type: "open",
     weight: 1.4,
   },
-  { id: 7, text: "一度終わった恋が、また始まることってあると思う？", type: "yesno", weight: 0.9 },
-  { id: 8, text: "相手のために“自分を変える”のはアリ？", type: "yesno", weight: 1 },
+  {
+    id: 7,
+    text: "一度終わった恋が、また始まることってあると思う？",
+    type: "yesno",
+    weight: 0.9,
+  },
+  {
+    id: 8,
+    text: "相手のために“自分を変える”のはアリ？",
+    type: "yesno",
+    weight: 1,
+  },
   {
     id: 9,
     text: "言葉よりも“沈黙”のほうが伝わることってある？",
